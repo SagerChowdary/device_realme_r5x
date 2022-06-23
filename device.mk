@@ -350,7 +350,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
-<<<<<<< HEAD
+
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
@@ -358,9 +358,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
 
 # RenderScript HAL
-=======
+
 # RIL
->>>>>>> ab2c9246 (r5x: Move some configs into proprietary-files.txt)
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
@@ -434,6 +433,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+
     android.hardware.thermal@2.0-service.qti
 
 PRODUCT_COPY_FILES += \
@@ -441,6 +441,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-camera.conf \
     $(LOCAL_PATH)/configs/thermal/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
     $(LOCAL_PATH)/configs/thermal/thermal-engine-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal.conf
+    android.hardware.thermal@1.0-service
+
 
 # USB
 PRODUCT_PACKAGES += \
